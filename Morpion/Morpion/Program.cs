@@ -11,26 +11,21 @@ namespace Morpion
         // Fonction permettant l'affichage du Morpion
         public static void AfficherMorpion(int j, int k)
         {
-            // A compléter 
+
         }
 
-        // Fonction permettant de changer
-        // dans le tableau qu'elle est le 
-        // joueur qui à jouer
-        // Bien vérifier que le joueur ne sort
-        // pas du tableau et que la position
-        // n'est pas déjà jouée
+        // Fonction permettant de changer dans le tableau quel est le joueur qui a joué
+        // Bien vérifier que le joueur ne sort pas du tableau et que la position n'est pas déjà jouée
         public static bool AJouer(int j, int k, int joueur)
         {
             // A compléter 
             return false;
         }
 
-        // Fonction permettant de vérifier
-        // si un joueur à gagner
+        // Fonction permettant de vérifier si un joueur a gagné
         public static bool Gagner(int l, int c, int joueur)
         {
-            // A compléter 
+                
             return false;
         }
 
@@ -45,11 +40,12 @@ namespace Morpion
 	        int joueur = 1 ;   // 1 pour la premier joueur, 2 pour le second
 	        int l, c = 0;      // numéro de ligne et de colonne
             int j, k = 0;      // Parcourir le tableau en 2 dimensions
-            bool gagner = false; // Permet de vérifier si un joueur à gagné 
-            bool bonnePosition = false; // Permet de vérifier si la position souhaité est disponible
+            bool gagner = false; // Permet de vérifier si un joueur a gagné 
+            bool bonnePosition = false; // Permet de vérifier si la position souhaitée est disponible
 
-	        //--- initialisation de la grille ---
+            //--- initialisation de la grille ---
             // On met chaque valeur du tableau à 10
+            
 	        for (j=0; j < grille.GetLength(0); j++)
 		        for (k=0; k < grille.GetLength(1); k++)
 			        grille[j,k] = 10;
@@ -76,6 +72,7 @@ namespace Morpion
                     Console.WriteLine(e.ToString());
                 }
 
+                Console.WriteLine("C'est au tour de", joueur);
                 // Changement de joueur
                 // A compléter 
 
@@ -88,3 +85,31 @@ namespace Morpion
     }
   }
 }
+
+/*
+        affichage tablo
+            for (var p = 0; j < grille.GetLength(0); j++)
+            {
+                Console.Write("\n|====|====|====|====|\n");
+                Console.Write("|");
+                for (var i = 0; i < grille.GetLength(1); i++)
+                {
+                    Console.Write(" -- ");
+                    Console.Write("|");
+                }
+
+            }
+            Console.Write("\n|====|====|====|====|");
+
+
+à implémenter lorsque la vérification sera mise en place
+
+if 
+X/O aux cases (HORIZONTALES) [0, 0] && [0, 1] && [0, 2] || [1, 0] && [1, 1] && [1, 2] || [2, 0] && [2, 1] && [2, 2]
+X/O aux cases (VERTICALES) [0, 0] && [1, 0] && [2, 0] || [0, 1] && [1, 1] && [2, 1] || [0, 2] && [1, 2] && [2, 2]
+X/O aux cases (DIAGONALES) [0, 0] && [1, 1] && [2, 2] || [0, 2] && [1, 1] && [2, 0]
+vérification du joueur (X ou O)
+
+
+
+*/

@@ -27,7 +27,7 @@ namespace Tableau2Dimensions
             // 0 pour la première dimensions
             Console.WriteLine("Longeur première dimension : " + grilleString.GetLength(0));
             // 1 pour la seconde dimensions
-            Console.WriteLine("Longeur deuxième dimension: " + grilleString.GetLength(1));
+            Console.WriteLine("Longeur deuxième dimension: " + grilleString.GetLength(0));
 
             // Parcourir un tableau int sans valeurs
             for (var j = 0; j < grilleInt.GetLength(0); j++)
@@ -56,15 +56,15 @@ namespace Tableau2Dimensions
             // 0 pour la première dimensions
             Console.WriteLine("Longeur première dimension : " + grilleInt2.GetLength(0));
             // 1 pour la seconde dimensions
-            Console.WriteLine("Longeur deuxième dimension: " + grilleInt2.GetLength(1));
+            Console.WriteLine("Longeur deuxième dimension: " + grilleInt2.GetLength(0));
             Console.WriteLine("Affichage grille");
 
             // Dessiner une grille
-            for (var j = 0; j < grilleInt2.GetLength(0); j++)
+            for (var j = 0; j < grilleInt.GetLength(0); j++)
             {
                 Console.Write("\n|====|====|====|====|\n");
                 Console.Write("|");
-                for (var i = 0; i < grilleInt2.GetLength(1); i++)
+                for (var i = 0; i < grilleInt.GetLength(0); i++)
                 {
                     Console.Write(" -- ");
                     Console.Write("|");
