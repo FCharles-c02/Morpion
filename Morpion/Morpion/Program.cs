@@ -1,17 +1,26 @@
 ﻿using System;
 using System.Security.Policy;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Morpion
 {
     class Program
     {
+        static bool bonjour = true;
         public static int[,] grille = new int[3, 3]; // matrice pour stocker les coups joués
-
         // Fonction permettant l'affichage du Morpion
-        public static void AfficherMorpion(int j, int k)
+        public static void AfficherMorpion()
         {
-
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", grille[0,0], grille[0,1], grille[0,2]);
+            Console.WriteLine("_____|_____|_____ ");
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", grille[1,0], grille[1,1], grille[1,2]);
+            Console.WriteLine("_____|_____|_____ ");
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", grille[2,0], grille[2,1], grille[2,2]);
+            Console.WriteLine("     |     |      ");
         }
 
         // Fonction permettant de changer dans le tableau quel est le joueur qui a joué
@@ -21,14 +30,45 @@ namespace Morpion
             // A compléter 
             return false;
         }
-
+        private const int colonne = 3;
+        private const int ligne = 3;
         // Fonction permettant de vérifier si un joueur a gagné
-        public static bool Gagner(int l, int c, int joueur)
+        public static bool Gagner(int quette, int ok, int joueur)
         {
-                
+            for (int l = 0; l < ligne; l++)
+            {
+                if (grille[l, 0] == grille[l, 1] && grille[l, 1] == grille[l, 2] && grille[l, 0] != ' ')
+                {
+                    return true;
+                }
+            }
+
+            // Check columns
+            for (int c = 0; c < colonne; c++)
+            {
+                if (grille[0, c] == grille[1, c] && grille[1, c] == grille[2, c] && grille[0, c] != ' ')
+                {
+                    return true;
+                }
+            }
+
+            // Check diagonals
+            if (grille[0, 0] == grille[1, 1] && grille[0, 0] == grille[1, 1] && grille[2, 2] != ' ')
+            {
+                return true;
+            }
+            if (grille[2, 0] == grille[1, 1] && grille[0, 2] == grille[1, 1] && grille[2, 0] != ' ')
+            {
+                return true;
+            }
+
             return false;
         }
-
+        /*
+        X/O aux cases (HORIZONTALES) [0, 0] && [0, 1] && [0, 2] || [1, 0] && [1, 1] && [1, 2] || [2, 0] && [2, 1] && [2, 2]
+        X/O aux cases (VERTICALES) [0, 0] && [1, 0] && [2, 0] || [0, 1] && [1, 1] && [2, 1] || [0, 2] && [1, 2] && [2, 2]
+        X/O aux cases (DIAGONALES) [0, 0] && [1, 1] && [2, 2] || [0, 2] && [1, 1] && [2, 0]
+        */
         // Programme principal
         static void Main(string[] args)
         {
@@ -42,7 +82,7 @@ namespace Morpion
             int j, k = 0;      // Parcourir le tableau en 2 dimensions
             bool gagner = false; // Permet de vérifier si un joueur a gagné 
             bool bonnePosition = false; // Permet de vérifier si la position souhaitée est disponible
-
+            AfficherMorpion();
             //--- initialisation de la grille ---
             // On met chaque valeur du tableau à 10
             
@@ -92,6 +132,7 @@ namespace Morpion
             {
                 Console.Write("\n|====|====|====|====|\n");
                 Console.Write("|");
+
                 for (var i = 0; i < grille.GetLength(1); i++)
                 {
                     Console.Write(" -- ");
