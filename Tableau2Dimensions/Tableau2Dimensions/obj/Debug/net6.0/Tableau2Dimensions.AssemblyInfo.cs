@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tableau2Dimensions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+362564063dc98cfe6f8e8e2cc1827451164100dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tableau2Dimensions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tableau2Dimensions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

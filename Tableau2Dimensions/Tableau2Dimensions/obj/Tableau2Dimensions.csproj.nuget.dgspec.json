@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AP\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj": {}
+    "C:\\Users\\c.fortin\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj": {}
   },
   "projects": {
-    "D:\\AP\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj": {
+    "C:\\Users\\c.fortin\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AP\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj",
+        "projectUniqueName": "C:\\Users\\c.fortin\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj",
         "projectName": "Tableau2Dimensions",
-        "projectPath": "D:\\AP\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj",
+        "projectPath": "C:\\Users\\c.fortin\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj",
         "packagesPath": "C:\\Users\\c.fortin\\.nuget\\packages\\",
-        "outputPath": "D:\\AP\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\obj\\",
+        "outputPath": "C:\\Users\\c.fortin\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -56,24 +56,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

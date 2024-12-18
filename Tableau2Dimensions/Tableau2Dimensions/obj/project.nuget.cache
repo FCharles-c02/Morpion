@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gyrC9uSwJXamjh7cbG/So3S3kYG1w0lCi24EM+S6JnIO8BQ2zfCkHkeVPmNYHj2IYHS2ZkiC4w3nUv+jEtgojQ==",
+  "dgSpecHash": "AFSnAk8JzzqsnxYVFP4L1k76kvbdjIZyiOHMV+lv5/8GDopVXl+QEEr/FYjiWAefv4i54DxTo2c0pHWgDKZ6Jw==",
   "success": true,
-  "projectFilePath": "D:\\AP\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\c.fortin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\c.fortin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\c.fortin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\c.fortin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\c.fortin\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Tableau2Dimensions.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

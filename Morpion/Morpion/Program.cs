@@ -7,7 +7,6 @@ namespace Morpion
 {
     class Program
     {
-        static bool bonjour = true;
         public static int[,] grille = new int[3, 3]; // matrice pour stocker les coups joués
         // Fonction permettant l'affichage du Morpion
         public static void AfficherMorpion()
@@ -27,7 +26,7 @@ namespace Morpion
         // Bien vérifier que le joueur ne sort pas du tableau et que la position n'est pas déjà jouée
         public static bool AJouer(int j, int k, int joueur)
         {
-            // A compléter 
+            // A compléter
             return false;
         }
         private const int colonne = 3;
@@ -35,6 +34,7 @@ namespace Morpion
         // Fonction permettant de vérifier si un joueur a gagné
         public static bool Gagner(int quette, int ok, int joueur)
         {
+            // verif lignes
             for (int l = 0; l < ligne; l++)
             {
                 if (grille[l, 0] == grille[l, 1] && grille[l, 1] == grille[l, 2] && grille[l, 0] != ' ')
@@ -43,7 +43,7 @@ namespace Morpion
                 }
             }
 
-            // Check columns
+            // verif colonnes
             for (int c = 0; c < colonne; c++)
             {
                 if (grille[0, c] == grille[1, c] && grille[1, c] == grille[2, c] && grille[0, c] != ' ')
@@ -52,7 +52,7 @@ namespace Morpion
                 }
             }
 
-            // Check diagonals
+            // verif diagonales
             if (grille[0, 0] == grille[1, 1] && grille[0, 0] == grille[1, 1] && grille[2, 2] != ' ')
             {
                 return true;
@@ -91,19 +91,22 @@ namespace Morpion
 			        grille[j,k] = 10;
             while(!gagner && essais != 9)
             {
-
+                
                 // A compléter 
                 try
                 {
+                    
                     Console.WriteLine("Ligne   =    ");
                     Console.WriteLine("Colonne =    ");
+                    Console.WriteLine("\n");
+                    Console.WriteLine("C'est au tour du joueur",joueur);
                     // Peut changer en fonction de comment vous avez fait votre tableau.
                     Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 9); // Permet de manipuler le curseur dans la fenêtre 
                     l = int.Parse(Console.ReadLine()) - 1; 
                     // Peut changer en fonction de comment vous avez fait votre tableau.
                     Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 10); // Permet de manipuler le curseur dans la fenêtre 
                     c = int.Parse(Console.ReadLine()) - 1;
-
+                    essais++;
                     // A compléter 
 
                 }
@@ -111,10 +114,24 @@ namespace Morpion
                 {
                     Console.WriteLine(e.ToString());
                 }
-
+                // changement de joueur 
                 Console.WriteLine("C'est au tour de", joueur);
-                // Changement de joueur
-                // A compléter 
+
+                if (joueur == 1)
+                {
+                    joueur++;
+                    break;
+                }
+                if (joueur == 2)
+                {
+                    joueur = 1;
+                    break;
+                }
+                if (joueur > 2)
+                {
+                    Console.WriteLine("Joueur 3 ?");
+                }
+
 
             }; // Fin TQ
 
